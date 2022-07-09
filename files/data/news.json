@@ -1,0 +1,40 @@
+{
+	"newsItems": [
+		{
+			"id": 4,
+			"title": "House price is high now",
+			"image": "news/01.jpg",
+			"text": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'e"
+		},
+		{
+			"id": 5,
+			"title": "Good investment in property",
+			"image": "news/02.jpg",
+			"text": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'"
+		},
+		{
+			"id": 6,
+			"title": "Tips of the weekr",
+			"image": "news/03.jpg",
+			"text": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'"
+		},
+				{
+			"id": 7,
+			"title": "Good investment in property",
+			"image": "news/02.jpg",
+			"text": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'"
+		},
+				{
+			"id": 8,
+			"title": "House price is high now",
+			"image": "news/01.jpg",
+			"text": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'e"
+		},
+				{
+			"id": 9,
+			"title": "Tips of the weekr",
+			"image": "news/03.jpg",
+			"text": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'"
+		}
+	]
+}

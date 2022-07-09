@@ -1,0 +1,40 @@
+{
+	"galleryItems": [
+		{
+			"id": 7,
+			"title": "Interior design",
+			"image": "gallery-cards/01.jpg",
+			"text": "3 Months work time"
+		},
+		{
+			"id": 8,
+			"title": "Build modern housn",
+			"image": "gallery-cards/02.jpg",
+			"text": "3 Months work time"
+		},
+		{
+			"id": 9,
+			"title": "Build villa two floor",
+			"image": "gallery-cards/03.jpg",
+			"text": "3 Months work time"
+		},
+				{
+			"id":10,
+			"title": "IModern interior design",
+			"image": "gallery-cards/04.jpg",
+			"text": "3 Months work time"
+		},
+		{
+			"id": 11,
+			"title": "Renovation co working room",
+			"image": "gallery-cards/05.jpg",
+			"text": "3 Months work time"
+		},
+		{
+			"id": 12,
+			"title": "Real estate hous",
+			"image": "gallery-cards/06.jpg",
+			"text": "3 Months work time"
+		}
+	]
+}
