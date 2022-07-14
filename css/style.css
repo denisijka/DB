@@ -1059,7 +1059,8 @@ h6 {
 .media-home__image-banner span::after {
   content: "";
   position: absolute;
-  background: url("../img/icons-font/v-big.svg") 0 0 no-repeat;
+  background-image: url("../img/icons-font/v-big.svg");
+  background-repeat: no-repeat;
   width: 4.875rem;
   height: 3.625rem;
   bottom: 2.5rem;
@@ -3055,7 +3056,6 @@ h6 {
 }
 
 .slide-interested {
-  cursor: pointer;
   position: relative;
   padding: 1.375rem 3.25rem 2.625rem 1.375rem;
 }
