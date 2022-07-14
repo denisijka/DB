@@ -4699,7 +4699,7 @@
                     observer: true,
                     observeParents: true,
                     slidesPerView: 3,
-                    slidesPerGroup: 1,
+                    slidesPerGroup: 3,
                     spaceBetween: 20,
                     autoHeight: true,
                     speed: 1500,
@@ -4710,25 +4710,31 @@
                     },
                     breakpoints: {
                         320: {
-                            slidesPerView: 1,
-                            spaceBetween: 10,
-                            autoHeight: true,
-                            slidesPerGroup: 1
-                        },
-                        540: {
                             slidesPerView: 1.2,
-                            slidesPerGroup: 1,
-                            spaceBetween: 15
+                            spaceBetween: 10,
+                            autoHeight: false
+                        },
+                        541: {
+                            slidesPerView: 1.4,
+                            spaceBetween: 20
                         },
                         768: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                            slidesPerGroup: 2
+                            slidesPerView: 1.6,
+                            spaceBetween: 20
                         },
-                        1025: {
+                        850: {
+                            slidesPerView: 2.4,
+                            spaceBetween: 20,
+                            slidesPerGroup: 1
+                        },
+                        992: {
                             slidesPerView: 3,
                             spaceBetween: 20,
-                            slidesPerGroup: 3
+                            slidesPerGroup: 1
+                        },
+                        1200: {
+                            slidesPerView: 3,
+                            spaceBetween: 30
                         }
                     },
                     on: {}
@@ -4779,7 +4785,6 @@
                 observeParents: true,
                 slidesPerView: 1,
                 spaceBetween: 0,
-                autoHeight: true,
                 speed: 1e3,
                 loop: true,
                 touchRatio: .2,
@@ -4805,20 +4810,12 @@
                 watchSlidesProgress: true,
                 breakpoints: {
                     320: {
-                        slidesPerView: 1.2,
-                        spaceBetween: 0,
-                        autoHeight: false
-                    },
-                    541: {
-                        slidesPerView: 1.8,
-                        spaceBetween: 20
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 10
+                        slidesPerView: 3,
+                        spaceBetween: 5,
+                        autoHeight: true
                     },
                     992: {
-                        slidesPerView: 2.7,
+                        slidesPerView: 3,
                         spaceBetween: 20
                     },
                     1200: {
