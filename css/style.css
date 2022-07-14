@@ -492,25 +492,6 @@ h6 {
   padding-bottom: 7.5rem;
 }
 
-.head-section {
-  display: -ms-grid;
-  display: grid;
-  gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.head-section_white {
-  color: #fff;
-}
-
-.head-section_white .title,
-.head-section_white .text {
-  color: #fff;
-}
-
 .title {
   font-weight: 700;
   line-height: 1.6;
@@ -536,7 +517,6 @@ h6 {
 .text {
   color: #023957;
   line-height: 1.7;
-  max-width: 21.75rem;
 }
 
 @supports (font-size: clamp( 0.875rem , 0.8353960396rem  +  0.198019802vw , 1rem )) {
@@ -553,6 +533,25 @@ h6 {
 
 .text_white {
   color: #fff;
+}
+
+.head-section {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.head-section__title {
+  color: #fff;
+}
+
+.head-section__text {
+  color: #fff;
+  max-width: 28rem;
 }
 
 .no-webp .hero{
@@ -1200,7 +1199,6 @@ h6 {
 }
 
 .home-benefits {
-  margin-bottom: -4.375rem;
   position: relative;
   z-index: 10;
 }
@@ -1249,7 +1247,57 @@ h6 {
   row-gap: 1rem;
   height: 100%;
   padding: 3.5625rem 3.5625rem 2.625rem;
+  padding-top: 3.5625rem;
+  padding-bottom: 3.5625rem;
   color: #fff;
+}
+
+@supports (padding-left: clamp( 1.6875rem , -4.3509471788rem  +  9.7396272969vw , 3.5625rem )) {
+  .item-home-benefit__body {
+    padding-left: clamp( 1.6875rem , -4.3509471788rem  +  9.7396272969vw , 3.5625rem );
+  }
+}
+
+@supports not (padding-left: clamp( 1.6875rem , -4.3509471788rem  +  9.7396272969vw , 3.5625rem )) {
+  .item-home-benefit__body {
+    padding-left: calc(1.6875rem + 1.875 * (100vw - 61.99875rem) / 19.25125);
+  }
+}
+
+@supports (padding-right: clamp( 1.6875rem , -4.3509471788rem  +  9.7396272969vw , 3.5625rem )) {
+  .item-home-benefit__body {
+    padding-right: clamp( 1.6875rem , -4.3509471788rem  +  9.7396272969vw , 3.5625rem );
+  }
+}
+
+@supports not (padding-right: clamp( 1.6875rem , -4.3509471788rem  +  9.7396272969vw , 3.5625rem )) {
+  .item-home-benefit__body {
+    padding-right: calc(1.6875rem + 1.875 * (100vw - 61.99875rem) / 19.25125);
+  }
+}
+
+@supports (padding-top: clamp( 2.9375rem , 0.9246842737rem  +  3.2465424323vw , 3.5625rem )) {
+  .item-home-benefit__body {
+    padding-top: clamp( 2.9375rem , 0.9246842737rem  +  3.2465424323vw , 3.5625rem );
+  }
+}
+
+@supports not (padding-top: clamp( 2.9375rem , 0.9246842737rem  +  3.2465424323vw , 3.5625rem )) {
+  .item-home-benefit__body {
+    padding-top: calc(2.9375rem + 0.625 * (100vw - 61.99875rem) / 19.25125);
+  }
+}
+
+@supports (padding-bottom: clamp( 2rem , -0.0128157263rem  +  3.2465424323vw , 2.625rem )) {
+  .item-home-benefit__body {
+    padding-bottom: clamp( 2rem , -0.0128157263rem  +  3.2465424323vw , 2.625rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 2rem , -0.0128157263rem  +  3.2465424323vw , 2.625rem )) {
+  .item-home-benefit__body {
+    padding-bottom: calc(2rem + 0.625 * (100vw - 61.99875rem) / 19.25125);
+  }
 }
 
 .item-home-benefit__icon {
@@ -1350,10 +1398,6 @@ h6 {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
-}
-
-.home-works__head .text {
-  max-width: 21.75rem;
 }
 
 .home-works__button {
@@ -1509,6 +1553,10 @@ h6 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+}
+
+.client-say {
+  margin-top: 4.375rem;
 }
 
 .client-say__left {
@@ -4454,8 +4502,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (min-width: 61.99875em) {
+  .head-section__text {
+    max-width: 21.75rem;
+  }
+
   .header._header-scroll .header__container {
     min-height: 3.75rem;
+  }
+
+  .home-benefits {
+    margin-bottom: -4.375rem;
   }
 
   .client-say {
@@ -4750,11 +4806,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .home-benefits__items {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 83.125em) {
@@ -4803,6 +4854,35 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (max-width: clamp( 5rem , 4.603960396rem  +  1.9801980198vw , 6.25rem )) {
     .header__logo {
       max-width: calc(5rem + 1.25 * (100vw - 20rem) / 63.125);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 1.478960396rem  +  1.9801980198vw , 3.125rem )) {
+    .home-benefits {
+      padding-bottom: clamp( 1.875rem , 1.478960396rem  +  1.9801980198vw , 3.125rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 1.478960396rem  +  1.9801980198vw , 3.125rem )) {
+    .home-benefits {
+      padding-bottom: calc(1.875rem + 1.25 * (100vw - 20rem) / 63.125);
+    }
+}
+
+  .home-benefits__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+@supports (padding-top: clamp( 1.875rem , -0.0243727511rem  +  8.1039904049vw , 5rem )) {
+    .home-works {
+      padding-top: clamp( 1.875rem , -0.0243727511rem  +  8.1039904049vw , 5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , -0.0243727511rem  +  8.1039904049vw , 5rem )) {
+    .home-works {
+      padding-top: calc(1.875rem + 3.125 * (100vw - 23.4375rem) / 38.56125);
     }
 }
 
@@ -5474,6 +5554,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 34.43625em) {
+@supports (padding-left: clamp( 0.3125rem , -3.017068701rem  +  14.2061597909vw , 1.875rem )) {
+    .item-home-service {
+      padding-left: clamp( 0.3125rem , -3.017068701rem  +  14.2061597909vw , 1.875rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.3125rem , -3.017068701rem  +  14.2061597909vw , 1.875rem )) {
+    .item-home-service {
+      padding-left: calc(0.3125rem + 1.5625 * (100vw - 23.4375rem) / 10.99875);
+    }
+}
+
+@supports (padding-right: clamp( 0.3125rem , -3.017068701rem  +  14.2061597909vw , 1.875rem )) {
+    .item-home-service {
+      padding-right: clamp( 0.3125rem , -3.017068701rem  +  14.2061597909vw , 1.875rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.3125rem , -3.017068701rem  +  14.2061597909vw , 1.875rem )) {
+    .item-home-service {
+      padding-right: calc(0.3125rem + 1.5625 * (100vw - 23.4375rem) / 10.99875);
+    }
+}
 }
 
 @media (max-width: 33.12375rem) {
