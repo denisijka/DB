@@ -1051,24 +1051,15 @@ h6 {
 
 .media-home__image-banner span {
   position: relative;
-  -webkit-transform: translate(0, -1.875rem);
-      -ms-transform: translate(0, -1.875rem);
-          transform: translate(0, -1.875rem);
+  -webkit-transform: translateY(-1.875rem);
+      -ms-transform: translateY(-1.875rem);
+          transform: translateY(-1.875rem);
 }
 
-.media-home__image-banner span::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icons-font/v-big.svg");
-  background-repeat: no-repeat;
-  z-index: 3;
-  width: 4.875rem;
-  height: 3.625rem;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -150%);
-      -ms-transform: translate(-50%, -150%);
-          transform: translate(-50%, -150%);
+.media-home__image-banner span::before {
+  margin-left: 0.625rem;
+  margin-bottom: 0.9375rem;
+  font-size: 3.625rem;
 }
 
 @supports (padding-top: clamp( 1.875rem , 1.478960396rem  +  1.9801980198vw , 3.125rem )) {
