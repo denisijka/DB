@@ -1,57 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{ "title":"Contacts" })
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="page__hero hero">
-					<div class="hero__container">
-						<h1 class="hero__title hero__title_feedback title-h1">Need some consultation or want to collaborarion with us? Let’s connect!</h1>
+
+<head>
+	<title>Contacts</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220714163018">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="img/logo-db.svg" alt="Logo" />
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link _active">Home</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link ">Services</a></li>
+							<li class="menu__item"><a href="career.html" class="menu__link ">Career</a></li>
+							<li class="menu__item"><a href="process-details.html" class="menu__link ">Details</a></li>
+							<li class="menu__item"><a href="news.html" class="menu__link ">News</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<h1 class="hero__title hero__title_feedback title-h1">Need some consultation or want to collaborarion with us? Let’s connect!</h1>
+				</div>
+			</section>
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__wrapper">
+						<div class="contacts__item contacts__item_img">
+							<div class="contacts__img-ibg"><picture><source srcset="img/feedback/feedback.webp" type="image/webp"><img src="img/feedback/feedback.jpg" alt="image"></picture></div>
+						</div>
+						<div class="contacts__item contacts__item_form">
+							<h2 class="contacts__subtitle title-h2">Let’s talk about anything you need</h2>
+							<form action="#" class="contacts__form form">
+								<div class="form__line">
+									<div class="form__inner">
+										<label for="name" class="form__label"></label>
+										<input id="name" placeholder="Your name/company name" autocomplete="off" type="text" name="name" class="form__input" />
+									</div>
+									<div class="form__inner">
+										<label for="email" class="form__label"></label>
+										<input id="email" placeholder="Phone/E-mail" autocomplete="off" type="email" name="email" class="form__input" />
+									</div>
+								</div>
+								<div class="form__line form__line_area">
+									<label for="textarea" class="form__label"></label>
+									<textarea id="textarea" placeholder="Message" tabindex="" name="textarea" class="form__textarea"></textarea>
+								</div>
+								<button type="button" class="form__button button button_light-shape button_shadow-dark">Submit</button>
+							</form>
+						</div>
 					</div>
-				</section>
-				<section class="page__contacts contacts">
-					<div class="contacts__container">
-						<div class="contacts__wrapper">
-							<div class="contacts__item contacts__item_img">
-								<div class="contacts__img-ibg"><img src="@img/feedback/feedback.jpg" alt="image"></div>
+				</div>
+			</section>
+			<section class="page__massages massages">
+				<div class="massages__container">
+					<div class="massages__subtitle title-h2">Or contact us via e-mails or even mobile call or Whatsapp messages</div>
+					<div class="massages__items">
+						<a href="#" class="massages__link button button_light-shape button_shadow-dark">E-mails</a>
+						<a href="#" class="massages__link button button_light-shape button_shadow-dark">Whatsapp</a>
+						<a href="#" class="massages__link button button_light-shape button_shadow-dark">Message</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__main">
+					<div class="footer__wrapper">
+						<a href="" class="footer__logo">
+							<img src="img/logo-db.svg" alt="Logo" />
+						</a>
+						<div class="footer__descr">Lizenzo street number 12 Jakarta, Indonesia</div>
+						<a href="#/" class="footer__button button">Get directions</a>
+					</div>
+					<div class="footer__nav nav-footer">
+						<div data-spollers="529.98" class="nav-footer__spollers spollers">
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="spollers__tittle">Menu</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Home</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">About</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Gallery</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Service</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 							</div>
-							<div class="contacts__item contacts__item_form">
-								<h2 class="contacts__subtitle title-h2">Let’s talk about anything you need</h2>
-								<form action="#" class="contacts__form form">
-									<div class="form__line">
-										<div class="form__inner">
-											<label for="name" class="form__label"></label>
-											<input id="name" placeholder="Your name/company name" autocomplete="off" type="text" name="name" class="form__input" />
-										</div>
-										<div class="form__inner">
-											<label for="email" class="form__label"></label>
-											<input id="email" placeholder="Phone/E-mail" autocomplete="off" type="email" name="email" class="form__input" />
-										</div>
-									</div>
-									<div class="form__line form__line_area">
-										<label for="textarea" class="form__label"></label>
-										<textarea id="textarea" placeholder="Message" tabindex="" name="textarea" class="form__textarea"></textarea>
-									</div>
-									<button type="button" class="form__button button button_light-shape button_shadow-dark">Submit</button>
-								</form>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="spollers__tittle">Contact</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">E-mail</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Mobile</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Whatsapp</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Fax</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="spollers__tittle">Career</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Job</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Part-time</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Internship</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Service</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="spollers__tittle">Business</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Affiliate</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Collaboration</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Investment</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">People</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="page__massages massages">
-					<div class="massages__container">
-						<div class="massages__subtitle title-h2">Or contact us via e-mails or even mobile call or Whatsapp messages</div>
-						<div class="massages__items">
-							<a href="#" class="massages__link button button_light-shape button_shadow-dark">E-mails</a>
-							<a href="#" class="massages__link button button_light-shape button_shadow-dark">Whatsapp</a>
-							<a href="#" class="massages__link button button_light-shape button_shadow-dark">Message</a>
-						</div>
-					</div>
-				</section>
-			</main>
-			@@include('html/_footer.htm',{})
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container">
+					<p class="footer__copyright">2021 - Copyright ZHB Studio</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
 		</div>
-		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-	</body>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220714163018"></script>
+</body>
+
 </html>
