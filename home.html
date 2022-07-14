@@ -1,279 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{ "title":"Главная" })
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm', { "home" : "_active", "services" : "", "career" : "", "details" : "", "news" : "" })
-			<main class="page">
-				<section data-fullscreen class="home-hero">
-					<div class="home-hero__container">
-						<h1 class="home-hero__title title-h1">We build your dream house well and professionally</h1>
-						<div class="home-hero__text">Our team can build a house according to your wishes. Any design and concept, we will help make it happen</div>
-						<a href="feedback.html" class="home-hero__button button button_bright">Contact us</a>
-					</div>
-					<div class="home-hero__image-ibg">
-						<img src="@img/home/hero/hero-bg.jpg" alt="intro-bg" />
-					</div>
-				</section>
-				<section class="home-company">
-					<div class="home-company__container">
-						<div class="home-company__media media-home">
-							<div class="media-home__items">
-								<div class="media-home__column media-home__column_left">
-									<div class="media-home__image -ibg media-home__image_01">
-										<img src="@img/home/company/01.jpg" alt="image" />
-									</div>
-									<div class="media-home__image -ibg media-home__image_02">
-										<img src="@img/home/company/03.jpg" alt="image" />
-									</div>
-								</div>
-								<div class="media-home__column media-home__column_right">
-									<div class="media-home__image -ibg media-home__image_03">
-										<img src="@img/home/company/02.jpg" alt="image" />
-									</div>
-									<div class="media-home__image -ibg media-home__image_04">
-										<img src="@img/home/company/04.jpg" alt="image" />
-									</div>
-								</div>
-								<div class="media-home__image-banner"><span>Pro licensed</span></div>
-							</div>
-						</div>
-						<div class="home-company__content content-home">
-							<div class="content-home__body">
-								<h2 class="content-home__title title-h2">Our company</h2>
-								<div class="content-home__text">Debuilds is a team of architects, interior design, and contractors who help our clients not only to build their dream building, but also to feel comfortable after the building is used.</div>
-							</div>
-							<div class="content-home__handled handled">
-								<div class="handled__label">We already handled</div>
-								<div class="handled__items">
-									<div class="handled__item">50+ Clients</div>
-									<div class="handled__item">30+ House</div>
-									<div class="handled__item">20+ Building</div>
-								</div>
-							</div>
-							<a href="about.html" class="content-home__button button button_bright button_shadow-dark">See more</a>
-						</div>
-					</div>
-				</section>
-				<section class="home-services">
-					<div class="home-services__container">
-						<div class="home-services__head head-section">
-							<h2 class="title">Our services</h2>
-							<div class="text">Our services include building new buildings and renovating old buildings</div>
-						</div>
-						<div class="home-services__items">
-							<a href="#/" class="home-services__item">
-								<div class="item-home-service">
-									<div class="item-home-service__body">
-										<div class="item-home-service__icon">
-											<div class="item-home-service__ic _icon-service-01"></div>
-										</div>
-										<div class="item-home-service__title title-h3">Interior Design</div>
-										<div class="item-home-service__text">We have an interior designer for design your perfect inside house</div>
-									</div>
-									<div class="item-home-service__image-ibg"><img src="@img/home/services/01.jpg" alt="" /></div>
-								</div>
-							</a>
-							<a href="#/" class="home-services__item">
-								<div class="item-home-service">
-									<div class="item-home-service__body">
-										<div class="item-home-service__icon">
-											<div class="item-home-service__ic _icon-service-02"></div>
-										</div>
-										<div class="item-home-service__title title-h3">Interior Design</div>
-										<div class="item-home-service__text">We have an interior designer for design your perfect inside house</div>
-									</div>
 
-									<div class="item-home-service__image-ibg"><img src="@img/home/services/02.jpg" alt="" /></div>
-								</div>
-							</a>
-							<a href="#/" class="home-services__item">
-								<div class="item-home-service">
-									<div class="item-home-service__body">
-										<div class="item-home-service__icon">
-											<div class="item-home-service__ic _icon-service-03"></div>
-										</div>
-										<div class="item-home-service__title title-h3">Interior Design</div>
-										<div class="item-home-service__text">We have an interior designer for design your perfect inside house</div>
-									</div>
-									<div class="item-home-service__image-ibg"><img src="@img/home/services/03.jpg" alt="" /></div>
-								</div>
-							</a>
-							<a href="#/" class="home-services__item">
-								<div class="item-home-service">
-									<div class="item-home-service__body">
-										<div class="item-home-service__icon">
-											<div class="item-home-service__ic _icon-service-04"></div>
-										</div>
-										<div class="item-home-service__title title-h3">Interior Design</div>
-										<div class="item-home-service__text">We have an interior designer for design your perfect inside house</div>
-									</div>
-									<div class="item-home-service__image-ibg"><img src="@img/home/services/04.jpg" alt="" /></div>
-								</div>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="home-benefits">
-					<div class="home-benefits__container">
-						<div class="home-benefits__head head-section">
-							<h2 class="title">Our benefits</h2>
-							<div class="text">Here our benefits if you collaboration with our team</div>
-						</div>
-						<div class="home-benefits__items">
-							<div class="home-benefits__item">
-								<div class="item-home-benefit">
-									<div class="item-home-benefit__body">
-										<div class="item-home-benefit__icon _icon-v-big"></div>
-										<div class="item-home-benefit__title title-h3">Flexible time</div>
-										<div class="item-home-benefit__text">We work wherever you ready to builds. Work fast and profesional</div>
-									</div>
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220714163018">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-									<div class="item-home-benefit__image-ibg"><img src="@img/home/benefits/01.jpg" alt="" /></div>
-								</div>
-							</div>
-							<div class="home-benefits__item">
-								<div class="item-home-benefit">
-									<div class="item-home-benefit__body">
-										<div class="item-home-benefit__icon _icon-v-big"></div>
-										<div class="item-home-benefit__title title-h3">Customizable design</div>
-										<div class="item-home-benefit__text">We can design your buildings, but we open if you want to customize your design or if you have architect</div>
-									</div>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="img/logo-db.svg" alt="Logo" />
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link _active">Home</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link ">Services</a></li>
+							<li class="menu__item"><a href="career.html" class="menu__link ">Career</a></li>
+							<li class="menu__item"><a href="process-details.html" class="menu__link ">Details</a></li>
+							<li class="menu__item"><a href="news.html" class="menu__link ">News</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-									<div class="item-home-benefit__image-ibg"><img src="@img/home/benefits/02.jpg" alt="" /></div>
+		<main class="page">
+			<section data-fullscreen class="home-hero">
+				<div class="home-hero__container">
+					<h1 class="home-hero__title title-h1">We build your dream house well and professionally</h1>
+					<div class="home-hero__text">Our team can build a house according to your wishes. Any design and concept, we will help make it happen</div>
+					<a href="feedback.html" class="home-hero__button button button_bright">Contact us</a>
+				</div>
+				<div class="home-hero__image-ibg">
+					<picture><source srcset="img/home/hero/hero-bg.webp" type="image/webp"><img src="img/home/hero/hero-bg.jpg" alt="intro-bg" /></picture>
+				</div>
+			</section>
+			<section class="home-company">
+				<div class="home-company__container">
+					<div class="home-company__media media-home">
+						<div class="media-home__items">
+							<div class="media-home__column media-home__column_left">
+								<div class="media-home__image -ibg media-home__image_01">
+									<picture><source srcset="img/home/company/01.webp" type="image/webp"><img src="img/home/company/01.jpg" alt="image" /></picture>
+								</div>
+								<div class="media-home__image -ibg media-home__image_02">
+									<picture><source srcset="img/home/company/03.webp" type="image/webp"><img src="img/home/company/03.jpg" alt="image" /></picture>
 								</div>
 							</div>
-							<div class="home-benefits__item">
-								<div class="item-home-benefit">
-									<div class="item-home-benefit__body">
-										<div class="item-home-benefit__icon _icon-v-big"></div>
-										<div class="item-home-benefit__title title-h3">Negotiable price</div>
-										<div class="item-home-benefit__text">Yes, we’re open to negotiate the price with you, and we will give the best price for our lovely clients</div>
-									</div>
-									<div class="item-home-benefit__image-ibg"><img src="@img/home/benefits/03.jpg" alt="" /></div>
+							<div class="media-home__column media-home__column_right">
+								<div class="media-home__image -ibg media-home__image_03">
+									<picture><source srcset="img/home/company/02.webp" type="image/webp"><img src="img/home/company/02.jpg" alt="image" /></picture>
+								</div>
+								<div class="media-home__image -ibg media-home__image_04">
+									<picture><source srcset="img/home/company/04.webp" type="image/webp"><img src="img/home/company/04.jpg" alt="image" /></picture>
 								</div>
 							</div>
+							<div class="media-home__image-banner"><span>Pro licensed</span></div>
 						</div>
 					</div>
-				</section>
-				<section class="home-works">
-					<div class="home-works__container">
-						<div class="home-works__head head-section head-section_white">
-							<h2 class="title">Our works</h2>
-							<div class="text">Here our some of the best the result when we build some buildings, houses, and also interior designs</div>
+					<div class="home-company__content content-home">
+						<div class="content-home__body">
+							<h2 class="content-home__title title-h2">Our company</h2>
+							<div class="content-home__text">Debuilds is a team of architects, interior design, and contractors who help our clients not only to build their dream building, but also to feel comfortable after the building is used.</div>
 						</div>
-						<div class="home-works__gallery">
-							<div data-gallery class="home-works__gallery gallery-items">
-								<div class="gallery-items__column gallery-items__column_left">
-									<div data-src="@img/home/works/full/01.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_01">
-										<img src="@img/home/works/01.jpg" alt="" />
-									</div>
-									<div data-src="@img/home/works/full/02.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_02">
-										<img src="@img/home/works/02.jpg" alt="" />
-									</div>
-									<div data-src="@img/home/works/full/03.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_03">
-										<img src="@img/home/works/03.jpg" alt="" />
-									</div>
-								</div>
-								<div class="gallery-items__column gallery-items__column_center">
-									<div data-src="@img/home/works/full/04.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_04">
-										<img src="@img/home/works/04.jpg" alt="" />
-									</div>
-									<div data-src="@img/home/works/full/05.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_05">
-										<img src="@img/home/works/05.jpg" alt="" />
-									</div>
-								</div>
-								<div class="gallery-items__column gallery-items__column_right">
-									<div data-src="@img/home/works/full/06.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_06">
-										<img src="@img/home/works/06.jpg" alt="" />
-									</div>
-									<div data-src="@img/home/works/full/07.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_07">
-										<img src="@img/home/works/07.jpg" alt="" />
-									</div>
-									<div data-src="@img/home/works/full/08.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_08">
-										<img src="@img/home/works/08.jpg" alt="" />
-									</div>
-									<div data-src="@img/home/works/full/09.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_09">
-										<img src="@img/home/works/09.jpg" alt="" />
-									</div>
-								</div>
+						<div class="content-home__handled handled">
+							<div class="handled__label">We already handled</div>
+							<div class="handled__items">
+								<div class="handled__item">50+ Clients</div>
+								<div class="handled__item">30+ House</div>
+								<div class="handled__item">20+ Building</div>
 							</div>
 						</div>
-						<a href="gallery.html" class="home-works__button button button_shadow-dark button_bright">See more</a>
+						<a href="about.html" class="content-home__button button button_bright button_shadow-dark">See more</a>
+					</div>
+				</div>
+			</section>
+			<section class="home-services">
+				<div class="home-services__container">
+					<div class="home-services__head head-section">
+						<h2 class="title">Our services</h2>
+						<div class="text">Our services include building new buildings and renovating old buildings</div>
+					</div>
+					<div class="home-services__items">
+						<a href="#/" class="home-services__item">
+							<div class="item-home-service">
+								<div class="item-home-service__body">
+									<div class="item-home-service__icon">
+										<div class="item-home-service__ic _icon-service-01"></div>
+									</div>
+									<div class="item-home-service__title title-h3">Interior Design</div>
+									<div class="item-home-service__text">We have an interior designer for design your perfect inside house</div>
+								</div>
+								<div class="item-home-service__image-ibg"><picture><source srcset="img/home/services/01.webp" type="image/webp"><img src="img/home/services/01.jpg" alt="" /></picture></div>
+							</div>
+						</a>
+						<a href="#/" class="home-services__item">
+							<div class="item-home-service">
+								<div class="item-home-service__body">
+									<div class="item-home-service__icon">
+										<div class="item-home-service__ic _icon-service-02"></div>
+									</div>
+									<div class="item-home-service__title title-h3">Interior Design</div>
+									<div class="item-home-service__text">We have an interior designer for design your perfect inside house</div>
+								</div>
 
-						<section class="home-works__client-say">
-							<div class="client-say">
-								<div class="client-say__left">
-									<h2 class="client-say__title title-h2">What our clients say?</h2>
-									<div class="client-say__text text">See what our clients say about their new home</div>
-									<a href="story.html" class="client-say__button button button_bright">See more</a>
-								</div>
-								<div class="client-say__right">
-									<div class="client-say__image-ibg">
-										<img src="@img/home/works/client-say-bg.jpg" alt="" />
-									</div>
-									<div class="client-say__label">
-										<div class="label-client">
-											<div class="label-client__text">I really happy to see the result my new home. It’s really good house and good price too. And they work so fast becasue they have the best team. Once again, thankyou. I really appreciate it.</div>
-											<div class="label-client__name">- Mr. Roberto</div>
-											<div class="label-client__avatar">
-												<img src="@img/home/works/avatar.jpg" alt="avatar" />
-											</div>
-										</div>
-									</div>
-								</div>
+								<div class="item-home-service__image-ibg"><picture><source srcset="img/home/services/02.webp" type="image/webp"><img src="img/home/services/02.jpg" alt="" /></picture></div>
 							</div>
-						</section>
+						</a>
+						<a href="#/" class="home-services__item">
+							<div class="item-home-service">
+								<div class="item-home-service__body">
+									<div class="item-home-service__icon">
+										<div class="item-home-service__ic _icon-service-03"></div>
+									</div>
+									<div class="item-home-service__title title-h3">Interior Design</div>
+									<div class="item-home-service__text">We have an interior designer for design your perfect inside house</div>
+								</div>
+								<div class="item-home-service__image-ibg"><picture><source srcset="img/home/services/03.webp" type="image/webp"><img src="img/home/services/03.jpg" alt="" /></picture></div>
+							</div>
+						</a>
+						<a href="#/" class="home-services__item">
+							<div class="item-home-service">
+								<div class="item-home-service__body">
+									<div class="item-home-service__icon">
+										<div class="item-home-service__ic _icon-service-04"></div>
+									</div>
+									<div class="item-home-service__title title-h3">Interior Design</div>
+									<div class="item-home-service__text">We have an interior designer for design your perfect inside house</div>
+								</div>
+								<div class="item-home-service__image-ibg"><picture><source srcset="img/home/services/04.webp" type="image/webp"><img src="img/home/services/04.jpg" alt="" /></picture></div>
+							</div>
+						</a>
 					</div>
-				</section>
-				<section class="home-partners">
-					<div class="home-partners__container">
-						<div class="home-partners__title title-h2">Our Partners</div>
-						<div class="home-partners__items">
-							<a href="#/" class="home-partners__item">
-								<img src="@img/home/partners/01.svg" alt="" />
-							</a>
-							<a href="#/" class="home-partners__item">
-								<img src="@img/home/partners/02.svg" alt="" />
-							</a>
-							<a href="#/" class="home-partners__item">
-								<img src="@img/home/partners/03.svg" alt="" />
-							</a>
-							<a href="#/" class="home-partners__item">
-								<img src="@img/home/partners/04.svg" alt="" />
-							</a>
+				</div>
+			</section>
+			<section class="home-benefits">
+				<div class="home-benefits__container">
+					<div class="home-benefits__head head-section">
+						<h2 class="title">Our benefits</h2>
+						<div class="text">Here our benefits if you collaboration with our team</div>
+					</div>
+					<div class="home-benefits__items">
+						<div class="home-benefits__item">
+							<div class="item-home-benefit">
+								<div class="item-home-benefit__body">
+									<div class="item-home-benefit__icon _icon-v-big"></div>
+									<div class="item-home-benefit__title title-h3">Flexible time</div>
+									<div class="item-home-benefit__text">We work wherever you ready to builds. Work fast and profesional</div>
+								</div>
+
+								<div class="item-home-benefit__image-ibg"><picture><source srcset="img/home/benefits/01.webp" type="image/webp"><img src="img/home/benefits/01.jpg" alt="" /></picture></div>
+							</div>
 						</div>
-					</div>
-				</section>
-				<div class="home-video">
-					<div class="home-video__container">
-						<div class="home-video__inner">
-							<div data-watch="video" class="video-module">
-								<video id="video-module" data-src="files/short-preview.webm" data-full="files/short-main-wepm.webm" muted meta class="video-module__item" loop></video>
+						<div class="home-benefits__item">
+							<div class="item-home-benefit">
+								<div class="item-home-benefit__body">
+									<div class="item-home-benefit__icon _icon-v-big"></div>
+									<div class="item-home-benefit__title title-h3">Customizable design</div>
+									<div class="item-home-benefit__text">We can design your buildings, but we open if you want to customize your design or if you have architect</div>
+								</div>
+
+								<div class="item-home-benefit__image-ibg"><picture><source srcset="img/home/benefits/02.webp" type="image/webp"><img src="img/home/benefits/02.jpg" alt="" /></picture></div>
 							</div>
-							<div class="home-video__slogan">
-								<div class="home-video__text">This is the timelapse video that shows how our teams work</div>
+						</div>
+						<div class="home-benefits__item">
+							<div class="item-home-benefit">
+								<div class="item-home-benefit__body">
+									<div class="item-home-benefit__icon _icon-v-big"></div>
+									<div class="item-home-benefit__title title-h3">Negotiable price</div>
+									<div class="item-home-benefit__text">Yes, we’re open to negotiate the price with you, and we will give the best price for our lovely clients</div>
+								</div>
+								<div class="item-home-benefit__image-ibg"><picture><source srcset="img/home/benefits/03.webp" type="image/webp"><img src="img/home/benefits/03.jpg" alt="" /></picture></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<section class="home-subscribe">
-					<div class="home-subscribe__container">
-						<div class="home-subscribe__body">
-							<h2 class="home-subscribe__title title-h1">Want to get our offer updates and news?</h2>
-							<div class="home-subscribe__text">Submit your e-mail and we will give you update about information and discount. Every single week. (not spamming)</div>
-						</div>
-						<div class="home-subscribe__form module-subscribe">
-							<form action="" class="module-subscribe__form">
-								<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="Enter your e-mail here" class="module-subscribe__input" />
-								<button type="submit" class="module-subscribe__button button">Submit</button>
-							</form>
+			</section>
+			<section class="home-works">
+				<div class="home-works__container">
+					<div class="home-works__head head-section head-section_white">
+						<h2 class="title">Our works</h2>
+						<div class="text">Here our some of the best the result when we build some buildings, houses, and also interior designs</div>
+					</div>
+					<div class="home-works__gallery">
+						<div data-gallery class="home-works__gallery gallery-items">
+							<div class="gallery-items__column gallery-items__column_left">
+								<div data-src="img/home/works/full/01.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_01">
+									<picture><source srcset="img/home/works/01.webp" type="image/webp"><img src="img/home/works/01.jpg" alt="" /></picture>
+								</div>
+								<div data-src="img/home/works/full/02.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_02">
+									<picture><source srcset="img/home/works/02.webp" type="image/webp"><img src="img/home/works/02.jpg" alt="" /></picture>
+								</div>
+								<div data-src="img/home/works/full/03.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_03">
+									<picture><source srcset="img/home/works/03.webp" type="image/webp"><img src="img/home/works/03.jpg" alt="" /></picture>
+								</div>
+							</div>
+							<div class="gallery-items__column gallery-items__column_center">
+								<div data-src="img/home/works/full/04.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_04">
+									<picture><source srcset="img/home/works/04.webp" type="image/webp"><img src="img/home/works/04.jpg" alt="" /></picture>
+								</div>
+								<div data-src="img/home/works/full/05.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_05">
+									<picture><source srcset="img/home/works/05.webp" type="image/webp"><img src="img/home/works/05.jpg" alt="" /></picture>
+								</div>
+							</div>
+							<div class="gallery-items__column gallery-items__column_right">
+								<div data-src="img/home/works/full/06.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_06">
+									<picture><source srcset="img/home/works/06.webp" type="image/webp"><img src="img/home/works/06.jpg" alt="" /></picture>
+								</div>
+								<div data-src="img/home/works/full/07.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_07">
+									<picture><source srcset="img/home/works/07.webp" type="image/webp"><img src="img/home/works/07.jpg" alt="" /></picture>
+								</div>
+								<div data-src="img/home/works/full/08.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_08">
+									<picture><source srcset="img/home/works/08.webp" type="image/webp"><img src="img/home/works/08.jpg" alt="" /></picture>
+								</div>
+								<div data-src="img/home/works/full/09.jpg" class="gallery-items__image-ibg gallery-items__image-ibg_09">
+									<picture><source srcset="img/home/works/09.webp" type="image/webp"><img src="img/home/works/09.jpg" alt="" /></picture>
+								</div>
+							</div>
 						</div>
 					</div>
-				</section>
-			</main>
-			@@include('html/_footer.htm',{})
+					<a href="gallery.html" class="home-works__button button button_shadow-dark button_bright">See more</a>
+
+					<section class="home-works__client-say">
+						<div class="client-say">
+							<div class="client-say__left">
+								<h2 class="client-say__title title-h2">What our clients say?</h2>
+								<div class="client-say__text text">See what our clients say about their new home</div>
+								<a href="story.html" class="client-say__button button button_bright">See more</a>
+							</div>
+							<div class="client-say__right">
+								<div class="client-say__image-ibg">
+									<picture><source srcset="img/home/works/client-say-bg.webp" type="image/webp"><img src="img/home/works/client-say-bg.jpg" alt="" /></picture>
+								</div>
+								<div class="client-say__label">
+									<div class="label-client">
+										<div class="label-client__text">I really happy to see the result my new home. It’s really good house and good price too. And they work so fast becasue they have the best team. Once again, thankyou. I really appreciate it.</div>
+										<div class="label-client__name">- Mr. Roberto</div>
+										<div class="label-client__avatar">
+											<picture><source srcset="img/home/works/avatar.webp" type="image/webp"><img src="img/home/works/avatar.jpg" alt="avatar" /></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="home-partners">
+				<div class="home-partners__container">
+					<div class="home-partners__title title-h2">Our Partners</div>
+					<div class="home-partners__items">
+						<a href="#/" class="home-partners__item">
+							<img src="img/home/partners/01.svg" alt="" />
+						</a>
+						<a href="#/" class="home-partners__item">
+							<img src="img/home/partners/02.svg" alt="" />
+						</a>
+						<a href="#/" class="home-partners__item">
+							<img src="img/home/partners/03.svg" alt="" />
+						</a>
+						<a href="#/" class="home-partners__item">
+							<img src="img/home/partners/04.svg" alt="" />
+						</a>
+					</div>
+				</div>
+			</section>
+			<div class="home-video">
+				<div class="home-video__container">
+					<div class="home-video__inner">
+						<div data-watch="video" class="video-module">
+							<video id="video-module" data-src="files/short-preview.webm" data-full="files/short-main-wepm.webm" muted meta class="video-module__item" loop></video>
+						</div>
+						<div class="home-video__slogan">
+							<div class="home-video__text">This is the timelapse video that shows how our teams work</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="home-subscribe">
+				<div class="home-subscribe__container">
+					<div class="home-subscribe__body">
+						<h2 class="home-subscribe__title title-h1">Want to get our offer updates and news?</h2>
+						<div class="home-subscribe__text">Submit your e-mail and we will give you update about information and discount. Every single week. (not spamming)</div>
+					</div>
+					<div class="home-subscribe__form module-subscribe">
+						<form action="" class="module-subscribe__form">
+							<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="Enter your e-mail here" class="module-subscribe__input" />
+							<button type="submit" class="module-subscribe__button button">Submit</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__main">
+					<div class="footer__wrapper">
+						<a href="" class="footer__logo">
+							<img src="img/logo-db.svg" alt="Logo" />
+						</a>
+						<div class="footer__descr">Lizenzo street number 12 Jakarta, Indonesia</div>
+						<a href="#/" class="footer__button button">Get directions</a>
+					</div>
+					<div class="footer__nav nav-footer">
+						<div data-spollers="529.98" class="nav-footer__spollers spollers">
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="spollers__tittle">Menu</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Home</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">About</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Gallery</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Service</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="spollers__tittle">Contact</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">E-mail</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Mobile</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Whatsapp</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Fax</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="spollers__tittle">Career</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Job</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Part-time</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Internship</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Service</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="spollers__tittle">Business</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Affiliate</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Collaboration</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Investment</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">People</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container">
+					<p class="footer__copyright">2021 - Copyright ZHB Studio</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
 		</div>
-		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-	</body>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220714163018"></script>
+</body>
+
 </html>
