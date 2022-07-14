@@ -1061,10 +1061,14 @@ h6 {
   position: absolute;
   background-image: url("../img/icons-font/v-big.svg");
   background-repeat: no-repeat;
+  z-index: 3;
   width: 4.875rem;
   height: 3.625rem;
-  bottom: 2.5rem;
-  left: 0.5rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -150%);
+      -ms-transform: translate(-50%, -150%);
+          transform: translate(-50%, -150%);
 }
 
 @supports (padding-top: clamp( 1.875rem , 1.478960396rem  +  1.9801980198vw , 3.125rem )) {
